@@ -12,4 +12,10 @@
     <PackageReference Include="Neo4j.Driver" Version="5.28.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="frontend/dist/**">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
