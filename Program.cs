@@ -75,4 +75,11 @@ if (Directory.Exists(frontendDist))
     });
 }
 
+var port = Environment.GetEnvironmentVariable("PORT");
+
+if (!string.IsNullOrEmpty(port))
+{
+    app.Urls.Add($"http://*:{port}");
+}
+
 app.Run();
